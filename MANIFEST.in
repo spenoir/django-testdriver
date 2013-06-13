@@ -1,0 +1,8 @@
+include djash/JsTestDriver.jar
+include djash/jsTestDriver.conf
+
+recursive-include djash/static *
+recursive-include djash/management *
+recursive-include djash/plugins *
+recursive-include djash/templates *
+recursive-include djash/tests *

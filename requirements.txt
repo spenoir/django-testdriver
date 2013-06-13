@@ -1,0 +1,6 @@
+django
+pyyaml
+ipdb
+django-nose
+milkman
+mock

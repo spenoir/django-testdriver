@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Firefox_200_Mac_OS.sidebar loaded" errors="0" failures="0" tests="1" time="0.023">
+<testcase classname="Firefox_200_Mac_OS.sidebar loaded" name="should load sidebar" time="0.023"/>
+</testsuite>
