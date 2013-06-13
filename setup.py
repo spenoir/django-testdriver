@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django_testdriver',
-    version='0.1.1',
+    version='0.1.2',
 	description='A custom JsTestDriver spec runner etc.',
     author='spenoir',
     author_email='aspence1@gmail.com',
