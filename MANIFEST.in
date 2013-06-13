@@ -1,3 +1,4 @@
+include README.md
 include django_testdriver/JsTestDriver.jar
 include django_testdriver/jsTestDriver.conf
 
