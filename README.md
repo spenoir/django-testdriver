@@ -16,21 +16,21 @@ You will also need to install LCOV (if you want to see a coverage report) from h
 Installation
 ------------
 
-Add djash to installed apps.
+Add django-testdriver to installed apps.
 
 	INSTALLED_APPS = (
 	...
-	'djash',
+	'django-testdriver',
 	...
 	)
 
-Set up the djash urls. Djash will own the url /test/.
+Set up the django-testdriver urls. django-testdriver will own the url /test/.
 
-	from djash import settings as djash_settings
+	from django-testdriver import settings as django-testdriver_settings
 
-	(r'^djash/', include('djash.urls')),
+	(r'^django-testdriver/', include('django-testdriver.urls')),
     (r'^test/(?P<path>.*)$', 'django.views.static.serve',
-        {'document_root': os.path.join(djash_settings.SITE_ROOT) }),
+        {'document_root': os.path.join(django-testdriver_settings.SITE_ROOT) }),
 
 Example
 -------

@@ -4,14 +4,14 @@ from . import settings
 
 from django.views.generic import TemplateView
 
-from djash.utils import ParseTestDriverYaml
+from django-testdriver.utils import ParseTestDriverYaml
 
 class JasmineSpecRunnerView(TemplateView):
     """
     This view renders stdout from management command
     and parses the conf
     """
-    template_name = "django-testdriver/base.html"
+    template_name = "django_testdriver/base.html"
 
     def get_context_data(self, **kwargs):
         context = super(JasmineSpecRunnerView, self).get_context_data(**kwargs)

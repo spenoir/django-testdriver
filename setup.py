@@ -1,13 +1,13 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='django-testdriver',
+    name='django_testdriver',
     version='0.1.0',
 	description='A custom JsTestDriver spec runner etc.',
     author='spenoir',
     author_email='aspence1@gmail.com',
     packages=find_packages(),
-    url='http://github.com/spenoir/django-testdriver',
+    url='http://github.com/spenoir/django_testdriver',
 
     long_description=open('README.md').read(),
     install_requires=[

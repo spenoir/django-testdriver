@@ -1,7 +1,7 @@
-from djash import settings
+from django-testdriver import settings
 from django.core.management.base import BaseCommand
 
-from djash.utils import JsTestDriverHandler
+from django-testdriver.utils import JsTestDriverHandler
 
 from optparse import make_option
 

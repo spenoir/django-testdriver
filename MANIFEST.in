@@ -1,8 +1,8 @@
-include djash/JsTestDriver.jar
-include djash/jsTestDriver.conf
+include django-testdriver/JsTestDriver.jar
+include django-testdriver/jsTestDriver.conf
 
-recursive-include djash/static *
-recursive-include djash/management *
-recursive-include djash/plugins *
-recursive-include djash/templates *
-recursive-include djash/tests *
+recursive-include django-testdriver/static *
+recursive-include django-testdriver/management *
+recursive-include django-testdriver/plugins *
+recursive-include django-testdriver/templates *
+recursive-include django-testdriver/tests *
