@@ -1,5 +1,5 @@
 =======
-django-testdriver
+django_testdriver
 =================
 
 Django integration of JsTestDriver
@@ -20,17 +20,17 @@ Add django-testdriver to installed apps.
 
 	INSTALLED_APPS = (
 	...
-	'django-testdriver',
+	'django_testdriver',
 	...
 	)
 
 Set up the django-testdriver urls. django-testdriver will own the url /test/.
 
-	from django-testdriver import settings as django-testdriver_settings
+	from django_testdriver import settings as django_testdriver_settings
 
-	(r'^django-testdriver/', include('django-testdriver.urls')),
+	(r'^django-testdriver/', include('django_testdriver.urls')),
     (r'^test/(?P<path>.*)$', 'django.views.static.serve',
-        {'document_root': os.path.join(django-testdriver_settings.SITE_ROOT) }),
+        {'document_root': os.path.join(django_testdriver_settings.SITE_ROOT) }),
 
 Example
 -------

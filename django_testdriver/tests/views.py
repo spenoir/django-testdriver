@@ -1,9 +1,9 @@
 import os
 import urllib2
-from django-testdriver import settings
+from django_testdriver import settings
 from django.test import TestCase
 from django.core.urlresolvers import reverse
-from django-testdriver.utils import ParseTestDriverYaml, JsTestDriverHandler
+from django_testdriver.utils import ParseTestDriverYaml, JsTestDriverHandler
 
 class YamlParseTests(TestCase):
     """

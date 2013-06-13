@@ -4,7 +4,7 @@ from . import settings
 
 from django.views.generic import TemplateView
 
-from django-testdriver.utils import ParseTestDriverYaml
+from django_testdriver.utils import ParseTestDriverYaml
 
 class JasmineSpecRunnerView(TemplateView):
     """
