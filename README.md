@@ -1,3 +1,9 @@
+=======
+django-testdriver
+=================
+
+Django integration of JsTestDriver
+
 Requirements
 ------------
 To install the requirements:

@@ -16,4 +16,7 @@ bin/*
 lib/*
 include/*
 nose_settings.py
+*.log
+*.pot
+*.pyc
 local_settings.py
