@@ -19,7 +19,7 @@ JSTESTDRIVER_OUTPUT = getattr(settings, 'JSTESTDRIVER_OUTPUT',
 JSTD_PORT = getattr(settings, 'JSTD_PORT', "9876")
 # can specify multiple browsers - comma separated
 JSTESTDRIVER_BROWSER_PATH = getattr(settings, 'JSTESTDRIVER_BROWSER_PATH',
-                                    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
+                                    "/Applications/Firefox.app/Contents/MacOS/Firefox, /Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
 # can specify multiple plugins - comma separated
 # for coverage to work, the coverage jar must be placed in a folder relative to JSTESTDRIVER_CONFIG
 JSTESTDRIVER_PLUGIN_PATHS = getattr(settings, 'JSTESTDRIVER_PLUGIN_PATHS',
@@ -27,4 +27,4 @@ JSTESTDRIVER_PLUGIN_PATHS = getattr(settings, 'JSTESTDRIVER_PLUGIN_PATHS',
 # list of files to remove from custom spec runner view
 # jasmine-adapter must be removed as it causes an error in spec runner
 JSTESTDRIVER_REMOVE_FROM_VIEW = getattr(settings, 'JSTESTDRIVER_REMOVE_FROM_VIEW',
-                                        [os.path.join(_root, 'js/libs/jasmine-adapter.js'), ])
+                                        ['js/libs/jasmine-adapter.js',])

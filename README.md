@@ -30,7 +30,7 @@ Set up the django-testdriver urls. django-testdriver will own the url /test/.
 
 	(r'^django-testdriver/', include('django_testdriver.urls')),
     (r'^test/(?P<path>.*)$', 'django.views.static.serve',
-        {'document_root': os.path.join(django_testdriver_settings.SITE_ROOT) }),
+        {'document_root': os.path.join(django_testdriver_settings.MEDIA_ROOT) }),
 
 Example
 -------
@@ -121,5 +121,3 @@ Still to Do / In the pipeline
 in the management command to download it
 
 - Write more tests obviously!
-
-- Create option to not include Coverage on spec runner
