@@ -27,4 +27,4 @@ JSTESTDRIVER_PLUGIN_PATHS = getattr(settings, 'JSTESTDRIVER_PLUGIN_PATHS',
 # list of files to remove from custom spec runner view
 # jasmine-adapter must be removed as it causes an error in spec runner
 JSTESTDRIVER_REMOVE_FROM_VIEW = getattr(settings, 'JSTESTDRIVER_REMOVE_FROM_VIEW',
-                                        ['js/libs/jasmine-adapter.js',])
+                                        ['js/libs/JasmineAdapter.js',])
