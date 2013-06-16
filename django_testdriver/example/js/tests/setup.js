@@ -1,1 +1,1 @@
-var FIXTURES_PATH = '/test/static/js/tests/fixtures';
+var FIXTURES_PATH = '/test/js/tests/fixtures';
