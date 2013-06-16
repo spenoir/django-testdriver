@@ -11,7 +11,7 @@ SITE_ROOT = getattr(settings, 'SITE_ROOT')
 MEDIA_ROOT = getattr(settings, 'MEDIA_ROOT')
 STATIC_ROOT = getattr(settings, 'STATIC_ROOT')
 JSTESTDRIVER_PATH = getattr(settings, 'JSTESTDRIVER_PATH',
-                             os.path.join(_root, 'JsTestDriver.jar'))
+                             os.path.join(_root, 'JsTestDriver-1.3.5.jar'))
 JSTESTDRIVER_CONFIG = getattr(settings, 'JSTESTDRIVER_CONFIG',
                                os.path.join(MEDIA_ROOT, 'jsTestDriver.conf'))
 JSTESTDRIVER_OUTPUT = getattr(settings, 'JSTESTDRIVER_OUTPUT',

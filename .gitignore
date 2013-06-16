@@ -20,3 +20,6 @@ nose_settings.py
 *.pot
 *.pyc
 local_settings.py
+build/*
+dist/*
+django_testdriver.egg-info/*
