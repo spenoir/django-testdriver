@@ -23,3 +23,4 @@ local_settings.py
 build/*
 dist/*
 django_testdriver.egg-info/*
+.DS_Store
