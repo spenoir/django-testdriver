@@ -35,8 +35,10 @@ Set up the django-testdriver urls. django-testdriver will own the url /test/.
 Example
 -------
 
-You'll find an example test setup and suite in the example folder. Copy it and paste it into your project tree.
-Then change the jsTestDriver.conf file paths to point to the files
+You'll find an example test setup and suite in the example folder. Copy the 'js' dir and the .conf file
+into your projects MEDIA_ROOT dir.
+You can of course change the jsTestDriver.conf file paths to point to whatever tests you have.
+The example uses Jasmine as a Test Runner although any JsTestDriver supported tests should work.
 
 Management command
 ------------------
