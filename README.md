@@ -27,6 +27,9 @@ Add django-testdriver to installed apps.
 	...
 	)
 
+Urls
+----
+
 Set up the django-testdriver urls. django-testdriver will own the url /test/.
 
 	from django_testdriver import settings as django_testdriver_settings
@@ -62,28 +65,27 @@ You can set multiple browsers separated by a comma, not a python list.
 After you have ran the jstestdriver management command you should see something here:
 http://localhost:9876/
 
-Hit this url in a browser to capture that browser:
-http://localhost:9876/capture
-When you run the tests via the jstestdrier management command, the captured browsers will
-each run the specs you have defined so if you have one test and two browsers captured,
+Hit this url in a browser to capture that browser: http://localhost:9876/capture if Chrome and FF don't
+open automatically. When you run the tests via the jstestdrier management command, the captured
+browsers will each run the specs you have defined so if you have one test and two browsers captured,
 JsTestDriver will show that two test were run.
 Alternatively you can just specify the browsers in settings as described above.
 
 Dashboard
 ---------
-The Spec Runner and coverage report is available at this url /jasmine/
+The Spec Runner and coverage report is available at this url /django-testdriver/jasmine/
 
 You can refresh the Spec Runner page after writing or modifying a spec to see the result
 in the runner. This is pretty much all you need for local testing, although you might want to
-run the management once in a while to get a coverage report update or to check your tests
+run the management command once in a while to get a coverage report update or to check your tests
 in other captured browsers.
 
 Coverage
 --------
 To update the coverage, you will need to run the management command as this is how the static
 files are generated using genhtml. You will also need to install LCOV (see Requirements above).
-For coverage to work, the coverage jar must be placed in a folder one below JSTESTDRIVER_PATH but it doesn't
-have to be called plugins! Nice to know :)
+For coverage to work, the coverage jar must be placed in a folder one below JSTESTDRIVER_PATH but it
+doesn't have to be called plugins! Nice to know :)
 
 Settings
 --------
