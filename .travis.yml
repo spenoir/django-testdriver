@@ -17,6 +17,8 @@ install:
  - pip install -q Django==$DJANGO_VERSION --use-mirrors
  - pip install -q -e . --use-mirrors
  - pip install pep8 --use-mirrors
- before_script:
-  - "pep8 --exclude=migrations --ignore=E501,E225 src"
+
+before_script:
+ - "pep8 --exclude=migrations --ignore=E501,E225 src"
+
 script: python setup.py test
