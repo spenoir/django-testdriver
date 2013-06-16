@@ -1,8 +1,8 @@
 include README.md
 include setup.py
 include django_testdriver/JsTestDriver.jar
-
 recursive-include django_testdriver/static *
 recursive-include django_testdriver/management *
 recursive-include django_testdriver/templates *
 recursive-include django_testdriver/tests *
+recursive-include django_testdriver/example *
