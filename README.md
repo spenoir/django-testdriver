@@ -6,8 +6,9 @@ Django integration of JsTestDriver
 
 Requirements
 ------------
-To install the requirements:
-    pip install -r requirements.txt
+To install:
+
+    pip install django-testdriver
 
 You will also need to install LCOV (if you want to see a coverage report) from here:
 
