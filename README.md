@@ -2,6 +2,8 @@
 django_testdriver
 =================
 
+[![Build Status](https://travis-ci.org/spenoir/django-testdriver.png?branch=master)](https://travis-ci.org/spenoir/django-testdriver)
+
 Django integration of JsTestDriver
 
 Requirements
