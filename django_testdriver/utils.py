@@ -66,26 +66,26 @@ class JsTestDriverHandler(object):
 
         self.downloaded_jars = True
 
-    def start_jstestdriver_server(self, testdriver_server_path, options):
+    def run_tests(self, options, testdriver_server_path):
+        # start the server if there is not one running
+        urllib2.urlopen(testdriver_server_path)
+        html = urllib2.urlopen(testdriver_server_path).read()
+        regex = re.compile('Captured\ Browsers\:\ \(([0-9])\)')
+        # if you have at least one captured browser
+        if int(re.search(regex, html).group(1)) > 0:
+            print "Server already running at http://localhost:%s" % options.get('port')
+            print "Running tests..."
+            self.run_jstestdriver_tests(options)
+        # if there are no captured browsers
+        else:
+            print "You have no browsers captured. at %s/capture/" % testdriver_server_path
+            print "Configured browsers are: %s" % settings.JSTESTDRIVER_BROWSER_PATH
 
+    def start_jstestdriver_server(self, testdriver_server_path, options):
         # try to ping the jstestdriver server
         self.testdriver_server_path = testdriver_server_path
         try:
-            urllib2.urlopen(testdriver_server_path)
-            html = urllib2.urlopen(testdriver_server_path).read()
-            regex = re.compile('Captured\ Browsers\:\ \(([0-9])\)')
-
-            # if you have at least one captured browser
-            if int(re.search(regex, html).group(1)) > 0:
-                print "Server already running at http://localhost:%s" % options.get('port')
-                print "Running tests..."
-                self.run_jstestdriver_tests(options)
-            # if there are no captured browsers
-            else:
-                print "You have no browsers captured. at %s/capture/" % testdriver_server_path
-                print "Configured browsers are: %s" % settings.JSTESTDRIVER_BROWSER_PATH
-
-        # start the server if there is not one running
+            self.run_tests(options, testdriver_server_path)
         except urllib2.URLError:
             Popen(['java', '-jar', settings.JSTESTDRIVER_PATH,
                    '--port', options.get('port'),

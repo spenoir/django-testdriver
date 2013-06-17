@@ -13,4 +13,10 @@ install:
  - pip install -q Django==$DJANGO_VERSION --use-mirrors
  - pip install -q -e . --use-mirrors
 
-script: python setup.py test
+script:
+ - python setup.py test
+# - python manage.py jstestdriver
+# - python manage.py jstestdriver
+
+addons:
+  firefox: "17.0"
