@@ -79,15 +79,12 @@ The Spec Runner and coverage report is available at this url /django-testdriver/
 
 You can refresh the Spec Runner page after writing or modifying a spec to see the result
 in the runner. This is pretty much all you need for local testing, although you might want to
-run the management command once in a while to get a coverage report update or to check your tests
-in other captured browsers.
+run the management command once in a while to get a coverage report update...
 
 Coverage
 --------
 To update the coverage, you will need to run the management command as this is how the static
 files are generated using genhtml. You will also need to install LCOV (see Requirements above).
-For coverage to work, the coverage jar must be placed in a folder one below JSTESTDRIVER_PATH but it
-doesn't have to be called plugins! Nice to know :)
 
 Settings
 --------
@@ -125,6 +122,4 @@ Still to Do / In the pipeline
 -----------------------------
 
 - Remove JsTestDriver.jar and the coverage plugin out of the project root and create an option
-in the management command to download it
-
-- Write more tests obviously!
+in the management command to download it.
