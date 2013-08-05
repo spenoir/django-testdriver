@@ -3,9 +3,7 @@ django-testdriver
 =================
 
 [![Build Status](https://travis-ci.org/spenoir/django-testdriver.png?branch=master)](https://travis-ci.org/spenoir/django-testdriver)
-
 [![PyPi version](https://pypip.in/v/django_testdriver/badge.png)](https://crate.io/packages/django_testdriver/)
-
 [![PyPi downloads](https://pypip.in/d/django_testdriver/badge.png)](https://crate.io/packages/django_testdriver/)
 
 Django integration of JsTestDriver
